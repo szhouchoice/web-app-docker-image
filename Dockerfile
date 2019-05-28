@@ -4,7 +4,7 @@ RUN apt-get update -y
 RUN apt-get install git -y
 RUN apt-get install apache2 -y
 WORKDIR /
-RUN git clone https://github.com/espiderinc/web-app-docker-demo
+RUN git clone https://github.com/szhouchoice/web-app-docker-demo
 WORKDIR /web-app-docker-demo/
 RUN git checkout -b szhouchoice-marathon
 RUN git pull origin szhouchoice-marathon
